@@ -1,0 +1,32 @@
+[1mdiff --git a/helloNG/src/app/app.component.html b/helloNG/src/app/app.component.html[m
+[1mindex f19167e..e015759 100644[m
+[1m--- a/helloNG/src/app/app.component.html[m
+[1m+++ b/helloNG/src/app/app.component.html[m
+[36m@@ -1,6 +1,6 @@[m
+ <app-tabs>[m
+   <app-tab title="Tab1">[m
+[31m-    ABCDEFG[m
+[32m+[m[32m    <app-calendar></app-calendar>[m
+   </app-tab>[m
+   <app-tab title="Tab2">[m
+     HIJKLMN[m
+[1mdiff --git a/helloNG/src/app/app.module.ts b/helloNG/src/app/app.module.ts[m
+[1mindex 7e72430..8d9905b 100644[m
+[1m--- a/helloNG/src/app/app.module.ts[m
+[1m+++ b/helloNG/src/app/app.module.ts[m
+[36m@@ -5,10 +5,14 @@[m [mimport { HttpModule } from '@angular/http';[m
+ [m
+ import { AppComponent } from './app.component';[m
+ import { TabsModule } from './tabs/tabs.module';[m
+[32m+[m[32mimport { CalendarComponent } from './calendar/calendar/calendar.component';[m
+[32m+[m[32mimport { TimePickerComponent } from './calendar/time-picker/time-picker.component';[m
+ [m
+ @NgModule({[m
+   declarations: [[m
+[31m-    AppComponent[m
+[32m+[m[32m    AppComponent,[m
+[32m+[m[32m    CalendarComponent,[m
+[32m+[m[32m    TimePickerComponent[m
+   ],[m
+   imports: [[m
+     BrowserModule,[m

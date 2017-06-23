@@ -1,0 +1,24 @@
+<div class="calendar">
+  <div class="row">
+    <h2>Timepicker</h2>
+    <div di>
+      <!--app-time-picker #timepicker [time]="calendarEntry.startTime" (timeChange)="onTimeChanged($event)"></app-time-picker-->
+      <app-time-picker #timepicker [(time)]="calendarEntry.startTime"></app-time-picker>
+    </div>
+    <br>
+  </div>
+  <div class="row">
+    <input class="form-control" style="max-width: 240px;" [(ngModel)]="calendarEntry.startTime">
+  </div>
+
+  <br>
+
+  <div class="row">
+    <h3>Zurücksetzen des Zeitwertes über die lokale Variable</h3>
+    <button class="btn" (click)="timepicker.reset()">Zeit zurücksetzen</button>
+
+
+    <h3>Auslesen des Zeitwertes über Two-Way Binding</h3>
+    <div>Die ausgewählte Zeit lautet: {{calendarEntry.startTime}}</div>
+  </div>
+</div>

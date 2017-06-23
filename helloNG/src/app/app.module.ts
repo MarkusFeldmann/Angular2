@@ -5,10 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { TabsModule } from './tabs/tabs.module';
+import { CalendarComponent } from './calendar/calendar/calendar.component';
+import { TimePickerComponent } from './calendar/time-picker/time-picker.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalendarComponent,
+    TimePickerComponent
   ],
   imports: [
     BrowserModule,
