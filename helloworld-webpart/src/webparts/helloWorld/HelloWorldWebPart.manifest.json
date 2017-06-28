@@ -16,11 +16,11 @@
   "preconfiguredEntries": [{
     "groupId": "8582ce1d-98fa-483d-98fd-0d031b2d07b1",
     "group": { "default": "Under Development" },
-    "title": { "default": "HelloWorld" },
+    "title": { "default": "Hello Bla" },
     "description": { "default": "HelloWorld description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "HelloWorld"
+      "description": "Hello Bla"
     }
   }]
 }

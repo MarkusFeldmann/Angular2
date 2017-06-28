@@ -18,6 +18,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
         <div class="${styles.container}">
           <div class="ms-Grid-row ms-bgColor-themeDark ms-fontColor-white ${styles.row}">
             <div class="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+            <h1>Here we go</h1>
               <span class="ms-font-xl ms-fontColor-white">Welcome to SharePoint!</span>
               <p class="ms-font-l ms-fontColor-white">Customize SharePoint experiences using Web Parts.</p>
               <p class="ms-font-l ms-fontColor-white">${escape(this.properties.description)}</p>
