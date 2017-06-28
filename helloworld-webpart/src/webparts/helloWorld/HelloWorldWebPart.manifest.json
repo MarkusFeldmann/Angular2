@@ -20,7 +20,8 @@
     "description": { "default": "HelloWorld description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "Hello Bla"
+      "description": "Hello Bla",
+      "lastname": "Feldmann"
     }
   }]
 }
