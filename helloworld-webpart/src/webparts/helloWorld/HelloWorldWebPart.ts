@@ -24,6 +24,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
               <span class="ms-font-xl ms-fontColor-white">Welcome to SharePoint ${escape(this.properties.test2)}!</span>
               <p class="ms-font-l ms-fontColor-white">Customize SharePoint experiences using Web Parts.</p>
               <p class="ms-font-l ms-fontColor-white">${escape(this.properties.description)}</p>
+              <p class="ms-font-l ms-fontColor-white">Loading from ${escape(this.context.pageContext.web.title)}</p>
               <a href="https://aka.ms/spfx" class="${styles.button}">
                 <span class="${styles.label}">Learn more</span>
               </a>
