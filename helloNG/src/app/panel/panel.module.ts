@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PanelComponent } from './panel.component';
+import { PanelComponent, PanelHeaderDirective } from './panel.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [PanelComponent],
-  exports: [PanelComponent]
+  declarations: [PanelComponent, PanelHeaderDirective],
+  exports: [PanelComponent, PanelHeaderDirective]
 })
 export class PanelModule { }

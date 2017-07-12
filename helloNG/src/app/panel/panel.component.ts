@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Directive } from '@angular/core';
 
 @Component({
   selector: 'app-panel',
@@ -16,5 +16,9 @@ export class PanelComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
+
+@Directive({
+  selector: 'app-panel-header'
+})
+export class PanelHeaderDirective {}

@@ -3,7 +3,12 @@
     <app-calendar></app-calendar>
   </app-tab>
   <app-tab title="Tab2">
-    <app-panel title="Das ist der Titel">
+    <app-panel>
+      <app-panel-header>
+        <span style="text-decoration:underline; text-decoration:aqua">
+        Dies ist ein weiterer <i>ng-content</i> Teil
+        </span>
+      </app-panel-header>
       Das ist ein Beispieltext <i>Bam</i>. Und es geht noch ein wenig weiter,...
     </app-panel>
   </app-tab>
@@ -11,4 +16,3 @@
     OPQRST
   </app-tab>
 </app-tabs>
-
