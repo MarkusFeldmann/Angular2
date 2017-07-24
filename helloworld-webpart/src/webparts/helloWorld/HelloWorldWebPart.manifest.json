@@ -21,7 +21,9 @@
     "officeFabricIconFontName": "Page",
     "properties": {
       "description": "Hello Bla",
-      "lastname": "Feldmann"
+      "lastname": "Feldmann",
+      "test2": "3",
+      "test": "I am the multiline default test. Oh man this is so cool."
     }
   }]
 }
