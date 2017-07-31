@@ -3,7 +3,13 @@
     <ng-content select="app-panel-header"></ng-content>
     <span class="arrow">{{open ? '&#9660;' : '&#9668;'}}</span>
   </div>
-  <div *ngIf="open" class="body">
+  <div *ngIf="open" class="body" appBorder="2">
     <ng-content></ng-content>
   </div>
+  <div [appBorder]="borderWidth">
+    Border-width ist {{borderWidth}}: 
+  </div>
+  <p>
+    <button (click)="borderWidth = borderWidth + 1">Border grösser</button>
+  </p>
 </div>
