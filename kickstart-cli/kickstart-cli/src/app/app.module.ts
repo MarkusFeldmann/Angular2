@@ -4,18 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { TabComponent, TabsComponent} from './tabs/tabs.component';
+import { TabsModule } from './tabs/tabs.module';
+import { CalendarComponent } from './calendar/calendar/calendar.component';
+import { TimePickerComponent } from './calendar/time-picker/time-picker.component';
+import { PanelModule } from './panel/panel.module';
 
 @NgModule({
   declarations: [
-    AppComponent, TabComponent, TabsComponent
+    AppComponent,
+    CalendarComponent,
+    TimePickerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    TabsModule,
+    PanelModule
   ],
-  exports: [TabComponent, TabsComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

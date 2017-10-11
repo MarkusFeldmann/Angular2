@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TabsComponent } from './tabs/tabs.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { TabsComponent } from './tabs/tabs.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this app works!';
+  title = 'app works!';
 }

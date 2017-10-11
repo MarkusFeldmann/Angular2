@@ -1,22 +1,18 @@
-<h1>Beispiele des Kernkapitels</h1>
-
-<div class="row">
-  <app-tabs>
-    <app-tab title="Timepicker">
-      CONTENT 1
-      <!--app-calendar></app-calendar-->
-    </app-tab>
-    <app-tab title="Tab2">
-      CONTENT 2
-      <!--app-calendar></app-calendar-->
-    </app-tab>
-    <app-tab title="Tab3">
-      CONTENT 3
-      <!--app-calendar></app-calendar-->
-    </app-tab>
-  </app-tabs>
-</div>
-
-<h1>
-  Here I am, {{title}}! Yeah
-</h1>
+<app-tabs>
+  <app-tab title="Tab1">
+    <app-calendar></app-calendar>
+  </app-tab>
+  <app-tab title="Tab2">
+    <app-panel>
+      <app-panel-header>
+        <span style="text-decoration:underline; text-decoration:aqua">
+        Dies ist ein weiterer <i>ng-content</i> Teil
+        </span>
+      </app-panel-header>
+      Das ist ein Beispieltext <i>Bam</i>. Und es geht noch ein wenig weiter,...
+    </app-panel>
+  </app-tab>
+  <app-tab title="Tab3">
+    OPQRST
+  </app-tab>
+</app-tabs>

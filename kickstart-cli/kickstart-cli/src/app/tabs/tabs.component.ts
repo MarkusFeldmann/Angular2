@@ -1,35 +1,37 @@
-import {Component, Input, AfterContentInit, ContentChildren, QueryList} from '@angular/core';
+import { Component, OnInit, Input, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-tab',
   template: `<div *ngIf='active' class='tab-content'>
-                 <ng-content></ng-content>
+                <ng-content></ng-content>
              </div>`
 })
 export class TabComponent {
   active: boolean;
   @Input() title;
-  constructor() {
+
+  constructor() { 
     this.active = false;
   }
 }
 
 @Component({
   selector: 'app-tabs',
-  styleUrls: ['tabs.component.css'],
-  templateUrl: 'tabs.component.html'})
-export class TabsComponent implements AfterContentInit {
-
+  templateUrl: 'tabs.component.html',
+  styleUrls: ['./tabs.component.css']
+})
+export class TabsComponent implements AfterContentInit
+{
   @ContentChildren(TabComponent) tabs: QueryList<TabComponent>;
-
   ngAfterContentInit() {
     this.tabs.first.active = true;
   }
 
   activate(tab_) {
-    for (const tab of this.tabs.toArray()) {
-      tab.active = false;
+    for(const t of this.tabs.toArray()) {
+      t.active = false;
     }
     tab_.active = true;
   }
+
 }
